@@ -1,15 +1,26 @@
 {
   "name": "linting",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dosomething": "node test.js"
+    "dosomething": "node test.js",
+    "htmlint": "npx htmlhint \"**/*.html\"",
+    "styleint": "npx stylelint \"**/*.css\"",
+    "eslint": "npx eslint \"**/*.js\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "prettier": "^2.6.2"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.6",
+    "eslint": "^8.15.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.8.2",
+    "stylelint-config-standard": "^25.0.0"
   }
 }
