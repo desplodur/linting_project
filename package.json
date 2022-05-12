@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   },
   "keywords": [],
@@ -23,5 +24,9 @@
     "htmlhint": "^1.1.4",
     "stylelint": "^14.8.2",
     "stylelint-config-standard": "^25.0.0"
+  },
+  "lint-staged": {
+    "*.html": "htmlhint",
+    "*.js": "eslint --fix"
   }
 }
